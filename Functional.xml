@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="genericUtilities.ITestListenerUtility"></listener>
+	</listeners>
+	<test thread-count="5" name="Test">
+		<groups>
+			<run>
+				<include name="Functional Group"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="Register.DWS_Register_02_Test" />
+			<class name="Login.DWS_Login_01_Test" />
+			<class name="Book.DWS_Book_04_Test" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

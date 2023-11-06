@@ -1,0 +1,36 @@
+package EmailFriend;
+
+import static org.testng.Assert.assertTrue;
+
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+//import org.openqa.selenium.support.ui.ExpectedConditions;
+//import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.Status;
+import genericUtilities.BaseClass;
+import genericUtilities.ITestListenerUtility;
+
+@Listeners(ITestListenerUtility.class)
+public class DWS_EmailFriend_08_Test extends BaseClass {
+	@Test(groups="Functional Group")
+	public void CaptureErrorMsgbyEmailingFriend() {
+		mailErrorMsg.getApparelShoeslink().click();
+		mailErrorMsg.getPolkaDotTop().click();
+		mailErrorMsg.getEmailaFriendButton().click();
+		mailErrorMsg.getEnterFriendEmail().sendKeys("fgc@yahoo.com");
+		mailErrorMsg.getEnteryourEmail().sendKeys("fcghhgg@gmail.com");
+		mailErrorMsg.getSendEmailButton().click();
+		
+		String ActualErrorMsg = mailErrorMsg.getErrorMsg().getText();
+		String ExpectedErrorMsg="Only registered customers can use email a friend feature";
+		
+		assertTrue(ActualErrorMsg.equals(ExpectedErrorMsg));
+		logger.log(Status.INFO, "Yes, Actual msg is same as Expected Msg");
+		
+		WebDriverWait wait= new WebDriverWait(driver,10);
+		wait.until(ExpectedConditions.visibilityOf(mailErrorMsg.getErrorMsg()));
+	}
+}

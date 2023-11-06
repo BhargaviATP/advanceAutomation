@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-05T19:59:16 IST" name="Default suite" finished-at="2023-11-05T19:59:23 IST" duration-ms="6731">
+    <groups>
+      <group name="System Group">
+        <method signature="DWS_WishList_09_Test.addproductToWishList()[pri:0, instance:WishListTask.DWS_WishList_09_Test@169e6180]" name="addproductToWishList" class="WishListTask.DWS_WishList_09_Test"/>
+      </group> <!-- System Group -->
+    </groups>
+    <test started-at="2023-11-05T19:59:16 IST" name="Default test" finished-at="2023-11-05T19:59:23 IST" duration-ms="6731">
+      <class name="WishListTask.DWS_WishList_09_Test">
+        <test-method is-config="true" signature="launchtheBrowserandNavigateToApplication()[pri:0, instance:WishListTask.DWS_WishList_09_Test@169e6180]" started-at="2023-11-05T19:59:16 IST" name="launchtheBrowserandNavigateToApplication" finished-at="2023-11-05T19:59:20 IST" duration-ms="3587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchtheBrowserandNavigateToApplication -->
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:WishListTask.DWS_WishList_09_Test@169e6180]" started-at="2023-11-05T19:59:20 IST" name="loginToApplication" finished-at="2023-11-05T19:59:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method signature="addproductToWishList()[pri:0, instance:WishListTask.DWS_WishList_09_Test@169e6180]" started-at="2023-11-05T19:59:20 IST" name="addproductToWishList" finished-at="2023-11-05T19:59:22 IST" duration-ms="2745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addproductToWishList -->
+        <test-method is-config="true" signature="teardownTheBrowser()[pri:0, instance:WishListTask.DWS_WishList_09_Test@169e6180]" started-at="2023-11-05T19:59:22 IST" name="teardownTheBrowser" finished-at="2023-11-05T19:59:23 IST" duration-ms="162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTheBrowser -->
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:WishListTask.DWS_WishList_09_Test@169e6180]" started-at="2023-11-05T19:59:22 IST" name="logoutFromApplication" finished-at="2023-11-05T19:59:22 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+      </class> <!-- WishListTask.DWS_WishList_09_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

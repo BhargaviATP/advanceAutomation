@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="genericUtilities.ITestListenerUtility"></listener>
+	</listeners>
+	<test thread-count="5" name="Test">
+		<groups>
+			<run>
+				<include name="System Group"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="DeskTopsCompare.DWS_DeskTop_05_Test" />
+			<class name="WishListTask.DWS_WishList_09_Test" />
+			<class name="Book.DWS_Book_04_Test" />
+			<class name="Cart.DWS_Cart_03_Test" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
