@@ -32,9 +32,9 @@ public class DWS_DeskTop_05_Test extends BaseClass{
 	desktoppage.getAddtoCompareList().click();
 	
 	assertTrue(desktoppage.getClickonProduct().isDisplayed());
-    logger.log(Status.INFO, "Product added to CompareList");
+    logger.log(Status.INFO, "Product added to CompareList ");
     
-    WebDriverWait wait= new WebDriverWait(driver,10);
+    WebDriverWait wait= new WebDriverWait(driver,10);//adding wait
 	wait.until(ExpectedConditions.and(ExpectedConditions.visibilityOf(desktoppage.getClickonProduct()),ExpectedConditions.visibilityOf(desktoppage.getClickonProduct1())));
 }
 }
