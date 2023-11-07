@@ -17,7 +17,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class WebDriverUtility {
 	WebDriver driver;
 	JavascriptExecutor js;
-	public WebDriverUtility(WebDriver driver) { //class constructor
+	public WebDriverUtility(WebDriver driver) { //Constructor
 		this.driver=driver;
 		js=(JavascriptExecutor)driver;
 	}
