@@ -18,9 +18,9 @@ public class DWS_Cart_03_Test extends BaseClass{
 		@Test(groups="System Group")
 		public void addProductToCart() {
 			loginpage.getLogin().click();
-			logger.log(Status.INFO, "User click on login link");
+			logger.log(Status.INFO, "User click on login link ");
 			loginpage.getEmail().sendKeys("seleniumjava@yahoo.com");
-			logger.log(Status.INFO, "User entered email address");
+			logger.log(Status.INFO, "User entered email address ");
 			loginpage.getPassword().sendKeys("sele123");
 			logger.log(Status.INFO, "User entered password");
 			loginpage.getRememberMe().click();
@@ -38,9 +38,8 @@ public class DWS_Cart_03_Test extends BaseClass{
 			bookpage.getRemoveCart().click();
 			bookpage.getUpdateCart().click();
 			logger.log(Status.INFO, "Product removed from Shopping Cart");
-			
-			WebDriverWait wait= new WebDriverWait(driver,10);
-			wait.until(ExpectedConditions.visibilityOf(bookpage.getCartisEmptyMSG()));
+		
+			WBUtility.explicitWaitReference(10).until(ExpectedConditions.visibilityOf(bookpage.getCartisEmptyMSG()));
 		}
 	}
 
