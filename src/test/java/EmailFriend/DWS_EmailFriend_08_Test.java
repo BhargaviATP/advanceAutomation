@@ -1,11 +1,7 @@
 package EmailFriend;
 
-import static org.testng.Assert.assertTrue;
-
+import static org.testng.Assert.assertEquals;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-//import org.openqa.selenium.support.ui.ExpectedConditions;
-//import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -27,7 +23,7 @@ public class DWS_EmailFriend_08_Test extends BaseClass {
 		String ActualErrorMsg = mailErrorMsg.getErrorMsg().getText();
 		String ExpectedErrorMsg="Only registered customers can use email a friend feature";
 		
-		assertTrue(ActualErrorMsg.equals(ExpectedErrorMsg));
+		assertEquals(ActualErrorMsg,ExpectedErrorMsg);
 		logger.log(Status.INFO, "Yes, Actual msg is same as Expected Msg");
 		
 		WBUtility.explicitWaitReference(10).until(ExpectedConditions.visibilityOf(mailErrorMsg.getErrorMsg()));
