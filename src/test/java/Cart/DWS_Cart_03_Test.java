@@ -16,7 +16,7 @@ import genericUtilities.ITestListenerUtility;
 public class DWS_Cart_03_Test extends BaseClass{
 	
 		@Test(groups="System Group")
-		public void addProductToCart() {
+		public void addProductToCart() {//added this to system Testing Xml.
 			loginpage.getLogin().click();
 			logger.log(Status.INFO, "User click on login link ");
 			loginpage.getEmail().sendKeys("seleniumjava@yahoo.com");
