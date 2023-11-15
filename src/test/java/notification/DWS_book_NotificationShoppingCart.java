@@ -19,9 +19,9 @@ public class DWS_book_NotificationShoppingCart extends BaseClass {
 		driver.findElement(By.xpath("//img[@alt='Picture of Computing and Internet']")).click();
 		driver.findElement(By.id("add-to-cart-button-13")).click();
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-		WebElement ele2 = driver.findElement(By.linkText("shopping cart"));
-		WBUtility.explicitWaitReference(10).until(ExpectedConditions.visibilityOf(ele2));
-		ele2.click();
+		WebElement ele = driver.findElement(By.linkText("shopping cart"));
+		WBUtility.explicitWaitReference(10).until(ExpectedConditions.visibilityOf(ele));
+		ele.click();
 		
 		WBUtility.explicitWaitReference(10).until(ExpectedConditions.visibilityOf(bookpage.getRemoveCart()));
 }
