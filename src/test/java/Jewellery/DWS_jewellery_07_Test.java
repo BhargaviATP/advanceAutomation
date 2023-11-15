@@ -40,8 +40,7 @@ public class DWS_jewellery_07_Test extends BaseClass {
 			System.out.println("All products within range");
 			logger.log(Status.INFO, "Yes, Jewellery is within selected Range");
 			
-			WebDriverWait wait= new WebDriverWait(driver,10);
-			wait.until(ExpectedConditions.visibilityOf(jpage.getRemoveFileterAppeared()));
+			WBUtility.explicitWaitReference(10).until(ExpectedConditions.visibilityOf(jpage.getRemoveFileterAppeared()));
 		}
 	}
 

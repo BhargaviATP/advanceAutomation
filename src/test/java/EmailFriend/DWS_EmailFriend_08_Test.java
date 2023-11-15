@@ -30,7 +30,6 @@ public class DWS_EmailFriend_08_Test extends BaseClass {
 		assertTrue(ActualErrorMsg.equals(ExpectedErrorMsg));
 		logger.log(Status.INFO, "Yes, Actual msg is same as Expected Msg");
 		
-		WebDriverWait wait= new WebDriverWait(driver,10);
-		wait.until(ExpectedConditions.visibilityOf(mailErrorMsg.getErrorMsg()));
+		WBUtility.explicitWaitReference(10).until(ExpectedConditions.visibilityOf(mailErrorMsg.getErrorMsg()));
 	}
 }

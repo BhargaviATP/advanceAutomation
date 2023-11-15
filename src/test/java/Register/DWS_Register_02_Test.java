@@ -22,8 +22,7 @@ public class DWS_Register_02_Test extends BaseClass {
 		registerPage.getRegisterConfirmPassword().sendKeys("MansiS");
 		registerPage.getRegistrationButton().click();
 		
-		WebDriverWait wait= new WebDriverWait(driver,10);
-		wait.until(ExpectedConditions.or(ExpectedConditions.visibilityOf(registerPage.getYourregistrationcompleted()),ExpectedConditions.visibilityOf(registerPage.getThespecifiedemailalreadyexists())));
+		WBUtility.explicitWaitReference(10).until(ExpectedConditions.or(ExpectedConditions.visibilityOf(registerPage.getYourregistrationcompleted()),ExpectedConditions.visibilityOf(registerPage.getThespecifiedemailalreadyexists())));
 	}
 
 }

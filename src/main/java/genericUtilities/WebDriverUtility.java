@@ -21,6 +21,7 @@ public class WebDriverUtility {
 		this.driver=driver;
 		js=(JavascriptExecutor)driver;
 	}
+	
 	public WebDriverWait explicitWaitReference(int time) {
 		WebDriverWait wait = new WebDriverWait(driver,time);
 		return wait;

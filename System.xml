@@ -13,6 +13,7 @@
 		<classes>
 			<class name="DeskTopsCompare.DWS_DeskTop_05_Test" />
 			<class name="WishListTask.DWS_WishList_09_Test" />
+			<class name="basic.DWS_book_NotificationShoppingCart"></class>
 			<class name="Book.DWS_Book_04_Test" />
 			<class name="Cart.DWS_Cart_03_Test" />
 		</classes>

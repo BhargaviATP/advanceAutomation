@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Cart.DWS_DeskTop_05_Test">
+      <class name="basic.book_NotificationShoppingCart">
         <methods>
           <include name="loginToApplication"/>
           <include name="logoutFromApplication"/>
           <include name="teardownTheBrowser"/>
           <include name="launchtheBrowserandNavigateToApplication"/>
-          <include name="addDeskTopToCart"/>
+          <include name="goTo_ShoppingCart_Through_Notification_Bar"/>
         </methods>
-      </class> <!-- Cart.DWS_DeskTop_05_Test -->
+      </class> <!-- basic.book_NotificationShoppingCart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -20,8 +20,6 @@ public class DWS_WishList_09_Test extends BaseClass {
 		assertTrue(wishlist.getSelectJewellery().isDisplayed());
 		System.out.println("Jewellery added to wishlist");
 		
-		WebDriverWait wait= new WebDriverWait(driver,10);
-		wait.until(ExpectedConditions.visibilityOf(remwishlist.getProductCheckBox()));
-
+		WBUtility.explicitWaitReference(10).until(ExpectedConditions.visibilityOf(remwishlist.getProductCheckBox()));
 	}
 }

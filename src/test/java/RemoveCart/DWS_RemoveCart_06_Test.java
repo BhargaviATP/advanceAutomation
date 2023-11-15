@@ -3,6 +3,8 @@ package RemoveCart;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -25,23 +27,28 @@ public class DWS_RemoveCart_06_Test extends BaseClass {
 		desktoppage.getClickonProduct().click();
 		desktoppage.getAddtoCompareList().click();
 		Thread.sleep(3000);
-		desktoppage.getComputerClick().click();
+		driver.navigate().back();
 		desktoppage.getDesktopsClick().click();
 		desktoppage.getClickonProduct1().click();
 		desktoppage.getAddtoCompareList().click();
 
 		assertTrue(desktoppage.getClickonProduct().isDisplayed());
+		assertTrue(desktoppage.getClickonProduct1().isDisplayed());
+			
+		for(WebElement remele:desktoppage.getRemovebuttonlist()) {
+			try {
+				remele.click();
+			}catch(Exception e) {
+				remele = driver.findElement(By.xpath("//input[@value='Remove']"));
+				remele.click();
+				System.out.println("Message found: "+e.getMessage());
+			}
+		}
+		if (desktoppage.getRemovebuttonlist().size() == 0) {
+			System.out.println("all Desktops are removed from Compare List");
+			logger.log(Status.INFO, "all desktops removed from the cart");
+		}
 		
-		for(int i=0;i<desktoppage.getRemovebutton().size();) {
-			desktoppage.getRemovebutton().get(i).click();
-		}
-//		for(WebElement remele:desktoppage.getRemovebutton()) {
-//			remele.click();
-//		}
-		if (desktoppage.getRemovebutton().size() == 0) {
-			System.out.println("all products are removed from Compare List");
-		}
-		WebDriverWait wait= new WebDriverWait(driver,10);
-		wait.until(ExpectedConditions.visibilityOf(desktoppage.getNoithemsinCart()));
+		WBUtility.explicitWaitReference(10).until(ExpectedConditions.visibilityOf(desktoppage.getNoithemsinCart()));
 	}
 }

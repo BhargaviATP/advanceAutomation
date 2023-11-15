@@ -26,15 +26,15 @@ public class DeskTopPage extends BaseClass{
 	@FindBy(xpath="//img[@alt=\"Picture of Build your own expensive computer\"]")
 	private WebElement clickonProduct1;
 	@FindBy(xpath="//input[@title=\"Remove\"]")
-	private List<WebElement> removebutton;
+	private List<WebElement> removebuttonlist;
 	@FindBy(xpath="//div[contains(text(),'You have no items to compare.    ')]")
 	private WebElement NoithemsinCart;
 	
 	public WebElement getNoithemsinCart() {
 		return NoithemsinCart;
 	}
-	public List<WebElement> getRemovebutton() {
-		return (List<WebElement>) removebutton;
+	public List<WebElement> getRemovebuttonlist() {
+		return (List<WebElement>) removebuttonlist;
 	}
 	public WebElement getComputerClick() {
 		return computerClick;
