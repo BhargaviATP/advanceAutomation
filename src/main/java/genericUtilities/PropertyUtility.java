@@ -8,7 +8,7 @@ import java.util.Properties;
 public class PropertyUtility implements IAutoConstants {
 	/**
 	 * This method is developed to read data from Property file.
-	 * this method takes the parameter key whose value we want to fetch.
+	 * this method takes the parameter 'key' whose 'value' we want to fetch.
 	 * @param Key
 	 * @return value of the given key
 	 */

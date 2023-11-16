@@ -2,35 +2,35 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-15T20:59:04 IST" name="Default suite" finished-at="2023-11-15T20:59:11 IST" duration-ms="6851">
+  <suite started-at="2023-11-15T22:49:49 IST" name="Default suite" finished-at="2023-11-15T22:49:58 IST" duration-ms="8279">
     <groups>
-      <group name="System Group">
-        <method signature="DWS_WishList_09_Test.addproductToWishList()[pri:0, instance:WishListTask.DWS_WishList_09_Test@3f6b0be5]" name="addproductToWishList" class="WishListTask.DWS_WishList_09_Test"/>
-      </group> <!-- System Group -->
+      <group name="Functional Group">
+        <method signature="DWS_EmailFriend_08_Test.CaptureErrorMsgbyEmailingFriend()[pri:0, instance:EmailFriend.DWS_EmailFriend_08_Test@169e6180]" name="CaptureErrorMsgbyEmailingFriend" class="EmailFriend.DWS_EmailFriend_08_Test"/>
+      </group> <!-- Functional Group -->
     </groups>
-    <test started-at="2023-11-15T20:59:04 IST" name="Default test" finished-at="2023-11-15T20:59:11 IST" duration-ms="6851">
-      <class name="WishListTask.DWS_WishList_09_Test">
-        <test-method is-config="true" signature="launchtheBrowserandNavigateToApplication()[pri:0, instance:WishListTask.DWS_WishList_09_Test@3f6b0be5]" started-at="2023-11-15T20:59:05 IST" name="launchtheBrowserandNavigateToApplication" finished-at="2023-11-15T20:59:09 IST" duration-ms="3983" status="PASS">
+    <test started-at="2023-11-15T22:49:49 IST" name="Default test" finished-at="2023-11-15T22:49:58 IST" duration-ms="8279">
+      <class name="EmailFriend.DWS_EmailFriend_08_Test">
+        <test-method is-config="true" signature="launchtheBrowserandNavigateToApplication()[pri:0, instance:EmailFriend.DWS_EmailFriend_08_Test@169e6180]" started-at="2023-11-15T22:49:50 IST" name="launchtheBrowserandNavigateToApplication" finished-at="2023-11-15T22:49:54 IST" duration-ms="4438" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchtheBrowserandNavigateToApplication -->
-        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:WishListTask.DWS_WishList_09_Test@3f6b0be5]" started-at="2023-11-15T20:59:09 IST" name="loginToApplication" finished-at="2023-11-15T20:59:09 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:EmailFriend.DWS_EmailFriend_08_Test@169e6180]" started-at="2023-11-15T22:49:54 IST" name="loginToApplication" finished-at="2023-11-15T22:49:54 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method signature="addproductToWishList()[pri:0, instance:WishListTask.DWS_WishList_09_Test@3f6b0be5]" started-at="2023-11-15T20:59:09 IST" name="addproductToWishList" finished-at="2023-11-15T20:59:11 IST" duration-ms="2331" status="PASS">
+        <test-method signature="CaptureErrorMsgbyEmailingFriend()[pri:0, instance:EmailFriend.DWS_EmailFriend_08_Test@169e6180]" started-at="2023-11-15T22:49:54 IST" name="CaptureErrorMsgbyEmailingFriend" finished-at="2023-11-15T22:49:58 IST" duration-ms="3363" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addproductToWishList -->
-        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:WishListTask.DWS_WishList_09_Test@3f6b0be5]" started-at="2023-11-15T20:59:11 IST" name="logoutFromApplication" finished-at="2023-11-15T20:59:11 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- CaptureErrorMsgbyEmailingFriend -->
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:EmailFriend.DWS_EmailFriend_08_Test@169e6180]" started-at="2023-11-15T22:49:58 IST" name="logoutFromApplication" finished-at="2023-11-15T22:49:58 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApplication -->
-        <test-method is-config="true" signature="teardownTheBrowser()[pri:0, instance:WishListTask.DWS_WishList_09_Test@3f6b0be5]" started-at="2023-11-15T20:59:11 IST" name="teardownTheBrowser" finished-at="2023-11-15T20:59:11 IST" duration-ms="209" status="PASS">
+        <test-method is-config="true" signature="teardownTheBrowser()[pri:0, instance:EmailFriend.DWS_EmailFriend_08_Test@169e6180]" started-at="2023-11-15T22:49:58 IST" name="teardownTheBrowser" finished-at="2023-11-15T22:49:58 IST" duration-ms="151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownTheBrowser -->
-      </class> <!-- WishListTask.DWS_WishList_09_Test -->
+      </class> <!-- EmailFriend.DWS_EmailFriend_08_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
