@@ -42,5 +42,5 @@ public class DWS_Cart_03_Test extends BaseClass{
 			WBUtility.explicitWaitReference(10).until(ExpectedConditions.visibilityOf(bookpage.getCartisEmptyMSG()));
 		}
 	}
-
+// jenkins trail
 
